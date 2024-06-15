@@ -23,7 +23,7 @@ const Projects: FC = () => {
     try {
       const { data } = await axios.get<Repo[]>('https://api.github.com/users/gaabrieltorres7/repos');
 
-      const reposIds = [687777590, 634353005, 719269851, 694403867, 783134014]
+      const reposIds = [687777590, 634353005, 719269851, 694403867, 783134014, 701022224]
 
       const filteredData = data.filter((repo) => reposIds.includes(repo?.id));
       
